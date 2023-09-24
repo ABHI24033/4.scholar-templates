@@ -1,0 +1,71 @@
+:root{
+    --primary-color:rgb(85, 85, 252);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width:500px) {
+    .hero-container{
+        background-color: #37baf6;
+        height: 100vh;
+        width: 100vw;
+        color: white;
+        border-bottom-right-radius: 20%;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        margin: 1rem 2rem;
+        z-index: 10;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: -40rem;
+        left: 0;
+        opacity: 0.95;
+        transition: all 0.5s ease-in;
+    }
+    .menu a{
+        text-decoration: none;
+        margin: 1rem 10px;
+        font-size: 1.3rem;
+    }
+    .nav-items{
+        color: black;
+        list-style: none;
+    }
+    .menu-icons{
+        position: relative;
+        font-size: 2rem;
+        margin:1rem 2rem;
+        cursor: pointer;
+    }
+    #x{
+        display: none;
+        font-size: 1.5rem;
+        z-index: 10;
+        color: black;
+    }
+    
+
+}
