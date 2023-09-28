@@ -1,0 +1,10 @@
+.btn{
+    padding: 1rem 2rem;
+    background-color: white;
+    /* margin: 0 auto; */
+    border-radius: 2rem;
+    margin: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 4rem;
+}

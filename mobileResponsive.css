@@ -1,5 +1,6 @@
 :root{
-    --primary-color:rgb(85, 85, 252);
+    --primary-bg-color:#7a6ad8;
+    --card-bg-color:#e5e2f5;
 }
 *{
     margin: 0;
@@ -10,13 +11,13 @@ body{
     font-family: sans-serif;
 }
 
-@media only screen and (max-width:500px) {
+/* @media only screen and (max-width:500px) { */
     .hero-container{
-        background-color: #37baf6;
-        height: 100vh;
-        width: 100vw;
+        background-color: var(--primary-bg-color);
+        min-height: 132vh;
+        width: 100%;
         color: white;
-        border-bottom-right-radius: 20%;
+        border-bottom-right-radius: 30%;
     }
     .header{
         display: flex;
@@ -40,10 +41,11 @@ body{
         height: 100vh;
         width: 100vw;
         position: fixed;
-        top: -40rem;
+        top: -60rem;
         left: 0;
         opacity: 0.95;
         transition: all 0.5s ease-in;
+        /* z-index: 2; */
     }
     .menu a{
         text-decoration: none;
@@ -53,6 +55,14 @@ body{
     .nav-items{
         color: black;
         list-style: none;
+        padding: 10px 20px;
+    }
+    .nav-items:hover{
+        color: #7a6ad8;
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 20%;
+        
     }
     .menu-icons{
         position: relative;
@@ -68,4 +78,118 @@ body{
     }
     
 
+/* } */
+/* ========Hero Section================= */
+.hero{
+    background-image: url(./images/4..jpg);
+    background-size: 100% 100%;
+    min-height: 100vh;
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.hero-content{
+    background-color: rgba(14, 13, 1,0.5);
+    /* background-color: black; */
+    color: white;
+    /* opacity: 0.5; */
+    padding: 2rem 1rem;
+    height: 100vh;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1; */
+}
+.hero-heading{
+    text-align: center;
+    background-color: #7a6ad8;
+    padding: 0.5rem 0.8rem;
+    width: 8rem;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    color: white;
+}
+.hero-content>h2{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: system-ui;
+}
+.hero-paragraph{
+    /* text-align: center; */
+    text-align: center;
+    line-height: 2rem;
+}
+/* Services section start=============== */
+.services{
+    display: flex;
+    gap: 5rem;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    min-height: 70vh;
+}
+.services>div{
+    background-color: var(--card-bg-color);
+    width: 80%;
+    height: 22rem;
+    padding: 2rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 1rem;
+    flex-direction: column;
+    position: relative;
+    transition: all 1s linear;
+}
+.services>div>h2{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.services>div>p{
+    margin: 1rem 0;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+.Service-btn{
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    width: 8rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.Service-btn:hover{
+    background-color: var(--primary-bg-color);
+    color: white;
+}
+.service-icon{
+    background-color: var(--primary-bg-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    width:45%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s linear;
+
+}
+.services>div:hover .service-icon>img{
+    transform: translateY(-10px);
+}
+/* services section end=============== */

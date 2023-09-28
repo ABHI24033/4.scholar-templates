@@ -18,6 +18,6 @@ function CloseNav(){
     const logo=document.getElementById("logo");
     bars.style.display="block";
     x.style.display="none";
-    menu.style.top="-40rem";
+    menu.style.top="-60rem";
     logo.style.color="white";
 }
