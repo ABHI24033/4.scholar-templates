@@ -193,3 +193,69 @@ body{
     transform: translateY(-10px);
 }
 /* services section end=============== */
+/* ==========About section start======== */
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.blue-box{
+    background-color: var(--primary-bg-color);
+    min-height: 55vh;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+.accordian{
+    background: white;
+    margin: 1.8rem 1rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    /* text-align: center; */
+}
+.answer{
+    display: none;
+}
+.answer.active{
+    display: block;
+    padding: 1.5rem 0.5rem;
+}
+.blue-box-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.blue-box-header>span{
+    font-size: 1.5rem;
+    background-color: var(--primary-bg-color);
+    padding: 4px 10px;
+    border-radius: 50%;
+    color: white
+}
+
+.about-us{
+    background-color: #f2f2f5d5;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+.about-us>h5{
+    color: blue;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.about-us>h1, .about-us>p{
+    margin: 2rem 0;
+}
+.about-btn{
+    background-color: var(--primary-bg-color);
+    padding:0.8rem 1.5rem;
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    /* margin-top: 5rem; */
+}
+
+/* ===========About section end========== */
+
