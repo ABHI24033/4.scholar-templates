@@ -1,0 +1,145 @@
+.schedules{
+    margin: 5rem auto;
+}
+.schedules>p{
+    color: blue;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.schedules>h2{
+    text-align: center;
+    margin: 1rem 0 5rem 0;
+    font-size: 2rem;
+}
+
+.schedules-card{
+    background-color: var(--card-bg-color);
+    width: 95%;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    min-height: 57vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.schedules-card>span{
+    background: var(--primary-bg-color);
+    color: white;
+    padding: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+}
+.schedules-card>img{
+    width: 70%;
+    border-radius: 1rem;
+    margin-top: -2rem;
+}
+.schedules-card>div{
+    width: 100%;
+    padding: 2rem;
+}
+.schedules-card>div>p{
+    background-color: white;
+    padding: 10px 20px;
+    color: blue;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 50%;
+    border-radius: 2rem;
+}
+.schedules-card>div>h3{
+    font-size: 1.5rem;
+    font-family: inherit;
+    margin: 15px 0;
+}
+.course-detail{
+    width: 100%;
+    display: flex;
+    gap: 3%;
+     margin-top: 1.2rem;
+    line-height: 2rem;
+    justify-content: space-between;
+}
+.details{
+    font-size: 1rem;
+}
+.bold{
+    color: blue;
+    font-weight: 600;
+
+}
+/* ========contact-us============= */
+.contact-us{
+    margin: 4rem 0;
+}
+.contact-text{
+    margin-left: 1rem;
+}
+.contact-text>p:first-child{
+    font-weight: 700;
+    color: blue;
+    margin: 1rem 0;
+}
+.contact-text>h1{
+    margin: 1rem 0;
+    font-size: 2.4rem;
+}
+.contact-text>p{
+    font-size: 1.1rem;
+    color: black;
+    line-height: 1.8rem;
+}
+
+.contact-form{
+    background-color: var(--primary-bg-color);
+    width: 95%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    margin: 3rem auto;
+}
+.contact-form>input,.contact-form>textarea{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-color: #aaa0e7;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+.contact-form>button{
+    background: white;
+    padding: 0.7rem 0;
+    width: 64%;
+    font-size: 1.01rem;
+    color: var(--primary-bg-color);
+    font-weight: 600;
+    border: none;
+    border-radius: 3rem;
+    transition: all 1s;
+}
+.contact-form>button:hover{
+    background-color: #b3addb;
+    color: white;
+}
+/* ==========footer============= */
+.footer{
+    background-color: var(--primary-bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 1rem;
+}
